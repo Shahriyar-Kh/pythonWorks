@@ -60,12 +60,12 @@ This repository is designed for **students, beginners, and self-learners** who w
 
 ### 1️⃣ Clone this repository  
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/Shahriyar-Kh/pythonWorks.git
 ```
 
 ### 2️⃣ Navigate to project  
 ```bash
-cd <your-repo>
+cd pythonWorks
 ```
 
 ### 3️⃣ Run Python files  
