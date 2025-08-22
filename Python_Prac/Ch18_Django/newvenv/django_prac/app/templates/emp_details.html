@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+
+    Details About {{emp_details.firstname}} {{emp_details.lastname}}
+{% endblock %}
+
+{% block content %}
+    <h1>{{emp_details.firstname}} {{emp_details.lastname}}</h1>
+    
+    <p>Phone:{{emp_details.phone}}</p>
+
+    <p>Back to <a href="/employees">Employees</a></p>
+    
+{% endblock %}

@@ -1,0 +1,14 @@
+<h1>Hello {{ firstname }}, how are you?</h1> 
+
+{% with firstname="Shary khan" %}
+<h2>my name is {{ firstname }} and i am from charsadda </h2>
+
+{% endwith %}
+
+{% if greeting == 1 %}
+    <h1>Hello Shary </h1>
+{% elif greeting == 2 %}
+<h2>hello Umair khan</h2>
+{% else %}
+    <h1>User dont have this phone no</h1>
+{% endif %}

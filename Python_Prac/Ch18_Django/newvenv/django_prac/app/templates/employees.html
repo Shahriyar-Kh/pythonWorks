@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+    My resturent - list of all Employees
+{% endblock %}
+
+{% block content %}
+    <p> Back to Home <a href="/">Home</a></p>
+    
+    <h1>Employees</h1>
+    <ul>
+        {% for x in employees %}
+        <li><a href="emp_details/{{ x.id }}"> {{ x.firstname }} {{ x.lastname }}</a></li>
+        {% endfor %}
+    </ul>
+    <p> it is my first django program</p>
+
+    {% endblock %}

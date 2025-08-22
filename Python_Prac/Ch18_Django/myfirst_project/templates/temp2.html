@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Text Utils</Title>
+    </head>
+    <body>
+        <h1> Welcome to text analyze .Enter the text below</h1>
+        <!-- Get is used for to send this Form -->
+    <form action="/analyzed" method="get">
+        <!-- textarea is used to create textarea -->
+        <textarea name="Input_text" id="" cols="30" rows="10" style="width: 983px; height: 140px;"></textarea><br>
+        <input type="checkbox" name="removpunc"> Remove Punctuation<br>
+        <input type="checkbox" name="capitalyze"> UPPERCASE <br>
+        <input type="checkbox" name="removenewline"> Remove New Line <br>
+        <input type="checkbox" name="removeextraspace"> Remove Extra Spaces <br>
+
+        <button type="submit">Analyze text</button>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>421</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_percent">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #4CAF50; /* Green */
+         color: white;
+         border: 2px solid #388E3C;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #388E3C; /* Darker Green */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_arrow">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #2196F3; /* Blue */
+         color: white;
+         border: 2px solid #1976D2;
+         border-radius: 10px;
+         font-size: 28px;
+       }
+       QPushButton:pressed {
+         background-color: #1976D2; /* Darker Blue */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_clear">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>110</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #F44336; /* Red */
+         color: white;
+         border: 2px solid #D32F2F;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #D32F2F; /* Darker Red */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_div">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>110</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #FFEB3B; /* Yellow */
+         color: black;
+         border: 2px solid #FBC02D;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #FBC02D; /* Darker Yellow */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_mul">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>185</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #FFC107; /* Amber */
+         color: black;
+         border: 2px solid #FFA000;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #FFA000; /* Darker Amber */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_seven">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>185</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #03A9F4; /* Light Blue */
+         color: white;
+         border: 2px solid #0288D1;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #0288D1; /* Darker Light Blue */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eight">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>185</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #4CAF50; /* Green */
+         color: white;
+         border: 2px solid #388E3C;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #388E3C; /* Darker Green */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_nine">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>185</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #FFC107; /* Amber */
+         color: black;
+         border: 2px solid #FFA000;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #FFA000; /* Darker Amber */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_sub">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>260</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #FF5722; /* Deep Orange */
+         color: white;
+         border: 2px solid #E64A19;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #E64A19; /* Darker Deep Orange */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_four">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #009688; /* Teal */
+         color: white;
+         border: 2px solid #00796B;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #00796B; /* Darker Teal */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_five">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>260</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #03A9F4; /* Light Blue */
+         color: white;
+         border: 2px solid #0288D1;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #0288D1; /* Darker Light Blue */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_six">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>260</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #FF5722; /* Deep Orange */
+         color: white;
+         border: 2px solid #E64A19;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #E64A19; /* Darker Deep Orange */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_plus">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>380</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #4CAF50; /* Green */
+         color: white;
+         border: 2px solid #388E3C;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #388E3C; /* Darker Green */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_one">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #009688; /* Teal */
+         color: white;
+         border: 2px solid #00796B;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #00796B; /* Darker Teal */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_two">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>380</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #FFEB3B; /* Yellow */
+         color: black;
+         border: 2px solid #FBC02D;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #FBC02D; /* Darker Yellow */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_three">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>380</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #4CAF50; /* Green */
+         color: white;
+         border: 2px solid #388E3C;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #388E3C; /* Darker Green */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_equal">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>470</y>
+      <width>165</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #2196F3; /* Blue */
+         color: white;
+         border: 2px solid #1976D2;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #1976D2; /* Darker Blue */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_zero">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #009688; /* Teal */
+         color: white;
+         border: 2px solid #00796B;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #00796B; /* Darker Teal */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_decimal">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>470</y>
+      <width>75</width>
+      <height>75</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QPushButton {
+         background-color: #FFC107; /* Amber */
+         color: black;
+         border: 2px solid #FFA000;
+         border-radius: 10px;
+         font-size: 26px;
+       }
+       QPushButton:pressed {
+         background-color: #FFA000; /* Darker Amber */
+       }
+     </string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>301</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+       QLineEdit {
+         background-color: #FFFFFF; /* White */
+         color: #000000; /* Black Text */
+         border: 2px solid #CCCCCC; /* Light Gray */
+         border-radius: 10px;
+         font-size: 14px;
+       }
+     </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>421</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
