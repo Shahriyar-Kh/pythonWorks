@@ -98,6 +98,6 @@ python filename.py
 ---
 
 ## 👨‍💻 Author  
-📌 Developed & Maintained by **Shary**  
+📌 Developed & Maintained by **Shahriyar Khan**  
 
 If you find this repo useful, ⭐ star it and share it with others!  
